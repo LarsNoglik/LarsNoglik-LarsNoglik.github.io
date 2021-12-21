@@ -1,0 +1,119 @@
+/* For All Screen-sizes */
+
+body{
+    width:  100%;
+    height: 100%;
+    margin:  0%;
+}
+
+#headLine {
+    position:absolute;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(244,244,244,0.5);
+}
+
+    #headLine #menueBtn {
+
+        position:absolute;
+        top:  5%;
+        left: 2%;
+        height: 90%;
+        z-index: 1;
+
+        background-image: url("../img/hamburger-menu.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #headLine #menueBtn:hover {
+        background-color: rgba(200,0,0,0.5);
+    }
+
+    #headLine #text {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-family: 'Dancing Script', cursive;
+    }
+
+        #headLine #text #preText {
+            color:white;
+            margin-right: 5%;
+        }
+
+/* Special Cases */
+
+     /*Ultrawide Screens*/
+     @media screen and (min-width: 2560px)
+     {
+         body{
+         background-color: yellow;  
+         }
+ 
+         #headLine #text {
+             font-size: 1.5vw;
+         }
+ 
+         #headLine #menueBtn {
+             width: 3%;
+         }
+         
+     }
+
+
+    /*Desktop*/
+    @media screen and (min-width: 1024px) and (max-width: 2560px)
+    {
+        body{
+        background-color: green;  
+        }
+
+        #headLine #text {
+            font-size: 3vw;
+        }
+
+        #headLine #menueBtn {
+            width: 3%;
+        }
+        
+    }
+
+    /*Tablets*/
+    @media screen and (min-width: 600px) and (max-width: 1023px)
+    {
+        body{
+            background-color: black;  
+        }
+
+        #headLine #text {
+            font-size: 4vw;
+        }
+
+        #headLine #menueBtn {
+            width: 10%;
+        }
+    }
+
+    /*Smartphones*/
+    @media screen and (max-width: 600px)
+    {
+        body{
+        background-color: red;  
+        }
+
+        #headLine #text {
+            font-size: 5vw;
+        }
+
+        #headLine #menueBtn {
+            width: 10%;
+        }
+        
+    }
