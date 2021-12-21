@@ -53,6 +53,17 @@ body{
             color:white;
             margin-right: 5%;
         }
+        
+    #headLine #profileImg {
+        position: absolute;
+        top: 120%;
+        width: 50%;
+        height: 20%;
+        left: 25%;
+        
+        background-color: blue;
+        border-radius: 100%;
+    }
 
 footer{
     position: absolute;
