@@ -101,8 +101,8 @@ body{
         }
     }
 
-    /*Smartphones*/
-    @media screen and (max-width: 600px)
+    /*Smartphones - Vertical View*/
+    @media screen and (max-width: 600px) and (min-height: 300px)
     {
         body{
         background-color: red;  
@@ -117,3 +117,26 @@ body{
         }
         
     }
+
+     /*Smartphones - Horizontal View*/
+
+     @media screen and (max-width: 600px) and (max-height: 300px)
+    {
+        body{
+        background-color: pink;  
+        }
+
+        #headLine {
+            height: 15%;
+        }
+
+        #headLine #text {
+            font-size: 4vw;
+        }
+
+        #headLine #menueBtn {
+            width: 10%;
+        }
+        
+    }
+
