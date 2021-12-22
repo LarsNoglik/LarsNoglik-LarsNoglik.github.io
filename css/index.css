@@ -65,7 +65,7 @@ body{
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
 
-        border-radius: 100px 50px 100px 100px;
+        border-radius: 0px 100px 100px 100px;
         
         text-align: center;
 
