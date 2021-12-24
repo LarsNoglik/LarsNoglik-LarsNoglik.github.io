@@ -1,0 +1,72 @@
+#headLine #dropMenu{
+    position:absolute;
+    top:100%;
+    height: auto;
+    width: 30%;
+ 
+
+    text-align: center;
+}
+
+    #headLine #dropMenu p{
+     margin: 0%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+     border-style: solid;
+     border-color: grey;
+     border-radius: 0px 20px 20px 0px;
+     background-color: rgba(244,244,244,0.5);
+    }
+
+    #headLine #dropMenu p:hover{
+        background-color: rgba(200,0,0,0.5);
+        cursor: pointer;
+    }
+
+    .init{
+        display: none;
+    }
+
+    .show{
+        animation-name: anim_show;
+        animation-duration: 1s;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+    }
+
+    .hide{
+        animation-name: anim_hide;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+
+@keyframes anim_show {
+    from {
+        height: 100%;
+        top:100%;
+        display: "";
+        opacity: 100%;
+    }to{
+        top:0%;
+        height: 70%;
+        display: none;
+        opacity: 0%;
+    }
+}
+
+@keyframes anim_hide {
+    from {
+        height: 100%;
+        top:100%;
+        display: "";
+        opacity: 100%;
+    }to{
+        top:0%;
+        height: 70%;
+        display: none;
+        opacity: 0%;
+    }
+}

@@ -34,8 +34,10 @@ body{
         background-size: contain;
     }
 
+
     #headLine #menueBtn:hover {
         background-color: rgba(200,0,0,0.5);
+        cursor: pointer;
     }
 
     #headLine #text {
@@ -142,6 +144,10 @@ footer{
  
          #headLine #menueBtn {
              width: 3%;
+         }
+
+         #headLine #dropMenu {
+            font-size: 0.2vw;
          }
          
      }
